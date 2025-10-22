@@ -1,4 +1,4 @@
-# ProjectFlow
+[ProjectFlow_Architecture.drawio](https://github.com/user-attachments/files/23060890/ProjectFlow_Architecture.drawio)# ProjectFlow
 
 Repository containing all the files and code related to the ProjectFlow application.
 
@@ -31,6 +31,134 @@ Since most modern PM tools are accessed via the web, a complementary **landing p
 **Backend**
 - Dart (business logic)
 - Supabase (Postgres database + Auth)
+
+---
+
+## Application Architecture (Early development)
+
+[Uploading ProjectFlow_Architecture.dra<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram id="wi-7zPVDTk5gawMAVWvG" name="Page-1">
+    <mxGraphModel dx="992" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kSBmB55k5531rkbXrCZ1-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="kSBmB55k5531rkbXrCZ1-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.datazone_data_projects;" vertex="1" parent="1">
+          <mxGeometry x="386" y="40" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-2" value="ProjectFlow&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The goal of ProjectFlow is to allow solo users and companies an intuitive and beautifull to use application in which they can manage their projects. Be that organising a simple one man job or managing an enterprise level project, ProjectFlow is easy and intuitive and will allow all types of users to profit from its functionalities&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="64" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-10" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.web;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#9999FF;fillColor4=#ffffff;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="187.02" y="310" width="75.95" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-11" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.apps;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#9999FF;fillColor4=#ffffff;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="310" width="34.199999999999996" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="250" as="sourcePoint" />
+            <mxPoint x="630" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.438;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="kSBmB55k5531rkbXrCZ1-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="250" as="sourcePoint" />
+            <mxPoint x="220" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.438;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="250" as="sourcePoint" />
+            <mxPoint x="630" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-20" value="The main target platforms will be the web and mobile devices" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="184" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-21" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="430" as="sourcePoint" />
+            <mxPoint x="630" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-23" value="" style="endArrow=none;html=1;rounded=0;entryX=0.438;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="370" as="sourcePoint" />
+            <mxPoint x="220" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-25" value="" style="endArrow=none;html=1;rounded=0;entryX=0.438;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="370" as="sourcePoint" />
+            <mxPoint x="630" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-26" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="430" as="sourcePoint" />
+            <mxPoint x="424" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-27" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Code.svg;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="393" y="590" width="64" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-28" value="Flutter and Dart&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Due to the cross platform nature of the project, it has been decided that the application will be written in the Flutter framework and the Dart programming language. Flutter, as one of the most used and popular cross platform frameworks in the world, has been chosen due to is ability to create beautiful and intuitive application interfaces, with Dart being used for building the business logic and communicating with the backend service&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="524" y="590" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="kSBmB55k5531rkbXrCZ1-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.3000000000002" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-29" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.data;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#9999FF;fillColor4=#ffffff;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="401" y="800" width="48.6" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="642" as="sourcePoint" />
+            <mxPoint x="424" y="802" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-31" value="Supabase&lt;br&gt;&lt;br&gt;For the needs of this application, and keeping in mind the tech stack used for building the app, Supabase has been chosen for the backend service and the single source of truth. The main components that will be used are Supabase&#39;s Postgres database and Supabase Auth" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="780" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-32" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.web;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#9999FF;fillColor4=#ffffff;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="187.02" y="970" width="75.95" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-33" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.apps;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#9999FF;fillColor4=#ffffff;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="970" width="34.199999999999996" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-34" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="920" as="sourcePoint" />
+            <mxPoint x="620" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-35" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="920" as="sourcePoint" />
+            <mxPoint x="210" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-36" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="920" as="sourcePoint" />
+            <mxPoint x="620" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kSBmB55k5531rkbXrCZ1-37" value="Marketing&lt;br&gt;&lt;br&gt;Keeping in mind that Flutter&#39;s main function is an application building framework, its SEO capabilities are still not adequate for the needs of modern web scraping. Therefore a simple landing page will be made to promote the application on web browsers and give web users a way to access the app, while mobile users will be able to download the app from their app store on their respective mobile platforms (android/ios)&amp;nbsp;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="287" y="990" width="290" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+wio…]()
 
 ---
 
