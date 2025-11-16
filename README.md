@@ -40,7 +40,13 @@ Will be included as development starts
 
 ## 📌 Project Status
 Currently in early development 🚧  
-More details and features coming soon!
+
+In the repo you can now find the lib/pages folder where I have published the first files regarding the progress of the application.
+The files included are:
+  - main.dart (application initialization)
+  - login_page.dart (login page set up with the SupaEmailAuth widget from Supabase's supabase_auth_ui package for the Flutter framework)
+  - home_page.dart  (home page to which the user is redirected after successful signup or signin)
+In the following commits the initial models will be shown as well as other pages that are currently in development.
 
 ---
 
