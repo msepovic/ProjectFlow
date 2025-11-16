@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: const Icon(Icons.notifications),
             onPressed: () {
-              // Handle notification button press
+              // left as null for when the feature will be implemented
             },
           ),
           PopupMenuButton<String>(
