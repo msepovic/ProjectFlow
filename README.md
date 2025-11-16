@@ -34,10 +34,6 @@ Since most modern PM tools are accessed via the web, a complementary **landing p
 
 ---
 
-## Application Architecture (Early development)
-Will be included as development starts
----
-
 ## 📌 Project Status
 Currently in early development 🚧  
 
