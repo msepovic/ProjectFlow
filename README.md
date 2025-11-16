@@ -46,6 +46,7 @@ The files included are:
   - main.dart (application initialization)
   - login_page.dart (login page set up with the SupaEmailAuth widget from Supabase's supabase_auth_ui package for the Flutter framework)
   - home_page.dart  (home page to which the user is redirected after successful signup or signin)
+
 In the following commits the initial models will be shown as well as other pages that are currently in development.
 
 ---
