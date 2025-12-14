@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
+import 'package:projectflow/pages/login_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 
   await Supabase.initialize(
-    url: 'SUPABASE_URL', // not shown in source code for safety reasons
-    anonKey: 'ANONKEY', //  not shown in source code for safety reasons
+    url: 'SUPABASE_URL', //Key not shown due to security reasons
+    anonKey: 'ANONKEY', //Key not shown due to security reasons
   );
 }
 
@@ -20,11 +21,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true,
+        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 70, 125, 145)),
       ),
-      home: LoginPage()
+      home: const LoginPage(),
     );
   }
 }
+
