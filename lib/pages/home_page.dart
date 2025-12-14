@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:projectflow/views/dashboard.dart';
-import 'package:projectflow/views/projects.dart';
-import 'package:projectflow/views/tasks.dart';
 import 'package:projectflow/main.dart';
-import 'login_page.dart';
+import 'package:projectflow/pages/dashboard_page.dart';
+import 'package:projectflow/pages/login_page.dart';
+import 'package:projectflow/pages/projects_page.dart';
+import 'package:projectflow/pages/settings_page.dart';
+import 'package:projectflow/pages/task_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,19 +14,26 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
-  final List<Widget> _pages = [
+  int _selectedindex = 0;
+  final List <Widget> _pages = [
     DashboardPage(),
-    ProjectPage(),
-    TasksPage(),
+    ProjectsPage(),
+    TaskPage(),
+    SettingsPage()
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 235, 234, 234),
       appBar: AppBar(
-        leading: const FlutterLogo(),
+        elevation: 10.0,
+        leading: FlutterLogo(),
+        title: Text('ProjectFlow',
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold
+          ),
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
@@ -33,6 +41,7 @@ class _HomePageState extends State<HomePage> {
               // left as null for when the feature will be implemented
             },
           ),
+          SizedBox(width: 10,),
           PopupMenuButton<String>(
             icon: const Icon(Icons.person),
             onSelected: (value) async {
@@ -54,44 +63,43 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ],
-        title: Text(
-          'ProjectFlow',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            letterSpacing: 5,
-            fontWeight: FontWeight.bold,
-            color: Theme.of(context).colorScheme.onPrimaryContainer,
-          ),
-        ),
       ),
       body: Row(
         children: [
           NavigationRail(
+            leading: FloatingActionButton(
+              onPressed: null,
+              child: Icon(Icons.add) 
+            ),
             destinations: const [
-            NavigationRailDestination(
-              icon: Icon(Icons.home),
-              label: Text('Home'),
-            ),
-            NavigationRailDestination(
-              icon: Icon(Icons.dashboard),
-              label: Text('Dashboard'),
-            ),
-            NavigationRailDestination(
-              icon: Icon(Icons.task),
-              label: Text('Tasks'),
-            ),
-          ], selectedIndex: _selectedIndex, onDestinationSelected: (int index) {
-            setState(() {
-              _selectedIndex = index;
-            });
-          }),
-          
-          // This is the main content.
+              NavigationRailDestination(
+                icon: Icon(Icons.home), 
+                label: Text('Home')
+                ),
+              NavigationRailDestination(
+                icon: Icon(Icons.dashboard), 
+                label: Text('Projects')
+                ),
+              NavigationRailDestination(
+                icon: Icon(Icons.task), 
+                label: Text('Tasks')
+                ),
+              NavigationRailDestination(
+                icon: Icon(Icons.settings), 
+                label: Text('Settings')
+                ),
+            ], 
+            selectedIndex: _selectedindex, onDestinationSelected: (int index) {
+              setState(() {
+                _selectedindex = index;
+              });
+            },),
           Expanded(
             child: AnimatedSwitcher(
               duration: const Duration(milliseconds: 300),
-              child: _pages[_selectedIndex],
-            ),
-          ),
+              child: _pages[_selectedindex],
+            )
+          )
         ],
       ),
     );
